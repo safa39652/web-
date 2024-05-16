@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/1.jpg");
+  background-size: cover;
+  background-position: center;
+  float: right;
+}
+
+.availibal {
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.menu {
+  width: 50%;
+  height: 100vh;
+  background: rbba(86, 86, 86, 0.3);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.menu .menu_box .menu_card .menu_info h3 {
+  width: 80%;
+  margin-top: 40px;
+  margin-left: 15px;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.menu .menu_box .menu_card .menu_info h4 {
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  font-family: "Gill Sans", sans-serif;
+}
+.menu .menu_box {
+  width: 100%;
+  margin-top: 50px;
+  margin-left: 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.menu .menu_box .menu_card {
+  width: 325px;
+  height: 600px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu .menu_box .menu_card .menu_image {
+  width: 300px;
+  height: 245px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.menu .menu_box .menu_card .menu_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+
+.menu .menu_box .menu_card .menu_image:hover img {
+  transform: scale(1.1);
+}
+
+.menu .menu_box .menu_card .menu_info h6 {
+  width: 80%;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.menu .menu_box .menu_card .menu_info p {
+  text-align: left;
+  margin-top: 8px;
+  line-height: 21px;
+  margin-left: 20px;
+}
+.menu .menu_box .menu_card .menu_info p.espace {
+  word-spacing: 1.5em;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_icon {
+  color: yellow;
+  text-align: left;
+  margin-top: 8px;
+  line-height: 21px;
+  margin-left: 50px;
+}
+
+/* Reset default button styles */
+button {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 80px;
+  margin-top: 8px;
+}
+
+/* Style for Book Now button */
+.book-now-btn {
+  background-color: #0fe70c; /* Blue background */
+  color: #fff; /* White text */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.book-now-btn:hover {
+  background-color: #e9f1f9; /* Darker blue on hover */
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+}
+#prev,
+#next {
+  width: 20px;
+  cursor: pointer;
+}
+.preview {
+  display: flex;
+  align-items: center;
+  margin: 0 60px;
+}
+.preview img {
+  width: 60px;
+  margin: 0 10px;
+  opacity: 0.4;
+}
+.preview .active {
+  display: block;
+  border: 3px solid #fff;
+  width: 100px;
+  opacity: 1;
+}
